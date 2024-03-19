@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/exampleComponents": ["src/components/example/index.jsx"]
+    }
+  }
+}
