@@ -1,6 +1,6 @@
 {
   "name": "my-components",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a components library for use in various projects",
   "main": "index.js",
   "scripts": {
