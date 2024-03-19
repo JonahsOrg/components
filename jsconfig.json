@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/exampleComponents": ["src/components/example/index.jsx"]
+      "@/exampleComponents": ["src/components/Example/index.jsx"]
     }
   }
 }

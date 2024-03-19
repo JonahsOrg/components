@@ -11,6 +11,18 @@ export default defineConfig({
     },
     rollupOptions: {
       external: ["react"],
+      plugins: [
+        {
+          name: "ignore-raw-folder",
+          resolveId(source) {
+            // Regular expression to match paths like "/src/.components/*/raw/"
+            const pattern = /\/src\/\.components\/[^/]+\/_raw\//;
+            if (pattern.test(source)) {
+              return { id: source, external: true };
+            }
+          },
+        },
+      ],
     },
   },
 });
